@@ -1,6 +1,8 @@
 import React from 'react'
 import './Styles/nav.css'
-
+import { FiSearch } from 'react-icons/fi';
+import { FiUser } from 'react-icons/fi';
+import { FiShoppingCart } from 'react-icons/fi';
 
 function Nav() {
 
@@ -23,8 +25,19 @@ function Nav() {
               </li>
           </ul>
     </div>
-     <div className='flex items-center'>
-     
+     <div className="flex items-center justify-between  pr-[100px]">
+          <ul className='text-white flex gap-2' >
+             <li className='header__list'>
+             <a href='/'><FiSearch /></a>
+             </li>
+             <li className='header__list'>
+             <a href='/'><FiShoppingCart /></a>
+             </li>
+             <li className='header__list'>
+             <a href='/'><FiUser /></a>
+             </li>
+              
+          </ul>
      </div>
     </div>
   )
