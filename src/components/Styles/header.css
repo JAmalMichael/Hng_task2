@@ -2,7 +2,7 @@
     background-image: url('assets/headerImage.jpeg');
     background-position: center;
     background-repeat: none;
-    background-size: contain;
+    background-size: cover;
 }
 
 .home__header::after {
