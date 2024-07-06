@@ -1,0 +1,16 @@
+.cart__header {
+    background-image: url('assets/headerImage.jpeg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.cart__header::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 14rem;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.70);
+}

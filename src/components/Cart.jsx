@@ -1,9 +1,30 @@
 import React from 'react'
 import './Styles/cart.css'
+import Nav from '../sections/Nav'
+import { CiSearch } from 'react-icons/ci';
 
 function Cart() {
   return (
-    <div>Cart</div>
+    <div>
+        <div className='cart__header w-screen h-[14rem]'>
+            <Nav />
+        </div>
+        <div>
+        <div className='w-[80%] h-[150px] mx-auto py-[12px] px[16px] flex justify-between mt-5'>
+        <div className='w-[15.6rem] h-[7.8rem]'>
+        <h3 className='font-semibold text-[1.5rem]'>Your shopping cart</h3>
+        </div>
+        <div className='relative w-1/2'>
+          <CiSearch className='absolute left-2 top-[14px]'/>
+          <input 
+          type='text' 
+          placeholder='Search' 
+          className='w-[484px] h-[34px] bg-[#F8F8FA] px-[30px] py-[20px] text-sm rounded-2xl'/>
+        </div>
+    </div>
+
+        </div>
+    </div>
   )
 }
 
