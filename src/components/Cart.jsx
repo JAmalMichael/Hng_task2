@@ -2,6 +2,7 @@ import React from 'react'
 import './Styles/cart.css'
 import Nav from '../sections/Nav'
 import { CiSearch } from 'react-icons/ci';
+import CartCard from '../sections/CartCard';
 
 function Cart() {
   return (
@@ -10,7 +11,7 @@ function Cart() {
             <Nav />
         </div>
         <div>
-        <div className='w-[80%] h-[150px] mx-auto py-[12px] px[16px] flex justify-between mt-5'>
+        <div className='w-[80%] h-[150px] mx-auto py-[12px] px[16px] flex justify-between my-5'>
         <div className='w-[15.6rem] h-[7.8rem]'>
         <h3 className='font-semibold text-[1.5rem]'>Your shopping cart</h3>
         </div>
@@ -21,8 +22,10 @@ function Cart() {
           placeholder='Search' 
           className='w-[484px] h-[34px] bg-[#F8F8FA] px-[30px] py-[20px] text-sm rounded-2xl'/>
         </div>
-    </div>
-
+        </div>
+            <CartCard 
+            image={'assets/product-1.jpeg'} 
+            name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
         </div>
     </div>
   )
