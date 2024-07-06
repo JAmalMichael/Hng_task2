@@ -4,7 +4,7 @@ import './Styles/hero.css';
 function Hero() {
   return (
     <div 
-    className=' absolute top-[280px] z-20 left-10'>
+    className=' absolute top-[280px] z-20 left-12'>
     <div className='text-white items-center flex-col w-[1150px] h-[408px]'>
         <h1 className='hero_header text-center'>Unleash your potential with our top quality gym equipments</h1>
         <p 
