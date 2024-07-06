@@ -4,7 +4,7 @@ import './Styles/about.css';
 function About() {
   return (
     <div className='about bg-white w-[1240px]'>
-        <div className="w-[70%] h-[380px] mx-auto flex justify-center items-center gap-4">
+        <div className="w-[80%] h-[380px] mx-auto flex justify-center items-center gap-4">
             <div className='w-1/2 h-[180px]'>
             <span 
             className='bg-[#BE0F24] w-[78px] h-[30px] rounded-2xl p-1 text-white text-sm text-center'>
