@@ -6,7 +6,7 @@ import CartCard from '../sections/CartCard';
 
 function Cart() {
   return (
-    <div>
+    <div className=''>
         <div className='cart__header w-screen h-[14rem]'>
             <Nav />
         </div>
@@ -23,10 +23,41 @@ function Cart() {
           className='w-[484px] h-[34px] bg-[#F8F8FA] px-[30px] py-[20px] text-sm rounded-2xl'/>
         </div>
         </div>
-            <CartCard 
+            
+        </div>
+        <div className='w-[80%]  mx-auto'>
+        <CartCard 
+            image={'assets/product-5.jpeg'} 
+            name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
+            <hr className='my-4'/>
+            </div>
+
+
+        <div className='w-[80%]  mx-auto'>
+        <CartCard 
+            image={'assets/product-4.jpeg'} 
+            name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
+             <hr className='my-4'/>
+            </div>
+        <div className='w-[80%]  mx-auto'>
+        <CartCard 
             image={'assets/product-1.jpeg'} 
             name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
-        </div>
+            <hr className='my-4'/>
+            </div>
+        <div className='w-[80%]  mx-auto'>
+        <CartCard 
+            image={'assets/product-2.jpeg'} 
+            name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
+            <hr className='my-4'/>
+            </div>
+            
+        <div className='w-[80%]  mx-auto'>
+        <CartCard 
+            image={'assets/product-9.jpeg'} 
+            name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
+            <hr className='my-4'/>
+            </div>
     </div>
   )
 }
