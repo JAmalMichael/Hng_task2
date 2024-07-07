@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function CartTable() {
   return (
-    <div className='w-[100%] flex flex-col justify-around text-2xl'>
+    <div className='w-[100%] flex flex-col justify-around text-2xl max-sm:text-sm'>
         <ul className='p-2 font-semibold '>
             <li className='flex items-center justify-between mb-6'>
                 <p>Dumbell(5kg)</p>

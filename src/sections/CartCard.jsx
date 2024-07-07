@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Styles/cartcard.css'
 import { IoMdCheckbox } from 'react-icons/io';
 import { FaPlusCircle } from 'react-icons/fa';
 import { FaMinusCircle } from 'react-icons/fa';
 
 function CartCard(props) {
+  const [quantity, setQuantity] = useState('0');
+
+  const handleClickP = () => {
+    setQuantity( prevQuantity => prevQuantity + 1 );
+  }
+
+ const handleClickM = () => {
+  setQuantity( prevQuantity => (prevQuantity > 0 ? prevQuantity - 1 : prevQuantity) );}
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-between max-md:flex-col'>
         <div 
-        className="cartcard__icon text-[#060809] text-[48px] flex items-center justify-start">
+        className="cartcard__icon text-[#060809] text-[48px] flex items-center justify-start max-sm:flex-col
+        max-sm:items-start">
             <IoMdCheckbox />
-            <div className='p-2 flex items-center '>
+            <div className='p-2 flex items-center max-sm:flex-col'>
             <img 
             src={props.image}
             alt='product-image'
@@ -27,9 +36,9 @@ function CartCard(props) {
                         
                     <div className='w-[151.3px] h-[40.8px] flex justify-between text-[18px] '>
                     <span className='flex text-[#BE0F24] items-center justify-center gap-1'>
-                    <FaPlusCircle className=' cursor-pointer '/>
-                    <p className='font-semibold'>0</p>
-                    <FaMinusCircle className=' cursor-pointer '/>
+                    <FaPlusCircle onClick={handleClickP} className=' cursor-pointer '/>
+                    <p className='font-semibold'>{quantity}</p>
+                    <FaMinusCircle onClick={handleClickM} className=' cursor-pointer '/>
                     </span>
                     </div>
                  </div>

@@ -12,8 +12,9 @@ function Cart() {
             <Nav />
         </div>
         <div>
-        <div className='w-[80%] h-[150px] mx-auto py-[12px] px[16px] flex justify-between my-5'>
-        <div className='w-[15.6rem] h-[7.8rem]'>
+        <div className='w-[100%] h-[150px] mx-auto py-[12px] px-[16px] flex justify-between my-5 max-md:mx-0
+        max-sm:flex-col max-sm:h-[90px]'>
+        <div className='w-[15.6rem]'>
         <h3 className='font-semibold text-[1.5rem]'>Your shopping cart</h3>
         </div>
         <div className='relative w-1/2'>
@@ -21,7 +22,8 @@ function Cart() {
           <input 
           type='text' 
           placeholder='Search' 
-          className='w-[484px] h-[34px] bg-[#F8F8FA] px-[30px] py-[20px] text-sm rounded-2xl'/>
+          className='w-[384px] h-[34px] bg-[#F8F8FA] px-[30px] py-[20px] text-sm rounded-2xl
+          max-sm:w-[284px] max-sm:h-[14px]'/>
         </div>
         </div>
             
