@@ -1,5 +1,5 @@
 .home__header {
-    background-image: url('assets/headerImage.jpeg');
+    background-image: url('/headerImage.jpeg');
     background-position: center;
     background-repeat: none;
     background-size: cover;

@@ -1,5 +1,5 @@
 .footer__section { 
-    background-image: url('assets/footerImage.jpeg');
+    background-image: url('/footerImage.jpeg');
     background-position: center;
     background-repeat: none;
     background-size: cover;
