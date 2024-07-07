@@ -3,10 +3,11 @@ import './Styles/cart.css'
 import Nav from '../sections/Nav'
 import { CiSearch } from 'react-icons/ci';
 import CartCard from '../sections/CartCard';
+import CartTable from '../sections/CartTable';
 
 function Cart() {
   return (
-    <div className=''>
+    <div className='mb-32'>
         <div className='cart__header w-screen h-[14rem]'>
             <Nav />
         </div>
@@ -35,13 +36,13 @@ function Cart() {
 
         <div className='w-[80%]  mx-auto'>
         <CartCard 
-            image={'assets/product-4.jpeg'} 
+            image={'assets/product-1.jpeg'} 
             name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
              <hr className='my-4'/>
             </div>
         <div className='w-[80%]  mx-auto'>
         <CartCard 
-            image={'assets/product-1.jpeg'} 
+            image={'assets/product-5.jpeg'} 
             name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
             <hr className='my-4'/>
             </div>
@@ -58,6 +59,10 @@ function Cart() {
             name={'Dumbell'} price={`$75`} color={'Iron black'} size={`5kg`} />
             <hr className='my-4'/>
             </div>
+        <div className='w-[50%] ml-[100px] mt-10'>
+        <CartTable />
+        </div>
+
     </div>
   )
 }
