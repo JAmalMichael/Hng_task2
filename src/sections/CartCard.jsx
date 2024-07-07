@@ -19,7 +19,7 @@ function CartCard(props) {
         className="cartcard__icon text-[#060809] text-[48px] flex items-center justify-start max-sm:flex-col
         max-sm:items-start">
             <IoMdCheckbox />
-            <div className='p-2 flex items-center max-sm:flex-col'>
+            <div className='p-2 flex items-center max-sm:flex-col max-sm:items-start'>
             <img 
             src={props.image}
             alt='product-image'
