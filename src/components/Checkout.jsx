@@ -2,17 +2,16 @@ import React from 'react'
 import './Styles/checkout.css'
 import Nav from '../sections/Nav'
 import { FaCircleDot } from 'react-icons/fa6'
-import { IoRemoveOutline } from 'react-icons/io5'
 
 function Checkout() {
   return (
     <div className='checkout'>
         <div className='checkout__header h-[14rem]'>
-            <Nav />
+            <Nav className="checkout__header-nav"/>
         </div>
-        <div className='checkout__body w-[80%] mx-auto mt-16 mb-3'>
+        <div className='checkout__body w-[80%] mx-auto mt-16 mb-3 max-sm:mt-4 max-sm:w-[100%] max-sm:px-4'>
           <div>
-            <h1 className="text-2xl">Fill in your correct Shipping Details</h1>
+            <h1 className="text-2xl max-sm:text-[16px] max-sm:font-semibold">Fill in your correct Shipping Details</h1>
 
             <div className='flex text-[#BFBFBF] items-center mt-6'>
             <div className='text-[#BE0F24] '>
@@ -32,45 +31,46 @@ function Checkout() {
             </div>
           </div>
           <div>
-          <form className='checkout__form w-[80%] my-[100px]'>
-            <div className='w-[90%] flex gap-5 justify-between items-center mb-10'>
-              <label className='w-[50%]'> <p className='font-bold'>First Name</p>
+          <form className='checkout__form w-[80%] my-[100px] max-sm:my-[20px]'>
+            <div 
+            className='w-[90%] flex gap-5 justify-between items-center mb-10 max-sm:flex-col max-sm:gap-4 max-sm:mb-4'>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'> <p className='font-bold max-sm:font-semibold'>First Name</p>
               <input type="text" placeholder='First Name' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]' />
               </label>
 
-              <label className='w-[50%]'><p className='font-bold'>Last Name</p>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'><p className='font-bold max-sm:font-semibold'>Last Name</p>
               <input type="text" placeholder='Last Name' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
             </div>
-            <div className='w-[90%] flex gap-5 justify-between items-center mb-10'>
-              <label className='w-[50%]'><p className='font-bold'>Preferred Phone Number</p>
+            <div className='w-[90%] flex gap-5 justify-between items-center mb-10 max-sm:flex-col max-sm:gap-4 max-sm:mb-4'>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'><p className='font-bold max-sm:font-semibold'>Preferred Phone Number</p>
               <input type="text" placeholder='Phone Number' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
 
-              <label className='w-[50%]'><p className='font-bold'>Email Address</p>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'><p className='font-bold max-sm:font-semibold'>Email Address</p>
               <input type="text" placeholder='Email Address' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
             </div>
-            <div className='w-[90%] flex gap-5 justify-between items-center mb-10'>
-              <label className='w-[50%]'><p className='font-bold'>Street Address</p>
+            <div className='w-[90%] flex gap-5 justify-between items-center mb-10 max-sm:flex-col max-sm:gap-4 max-sm:mb-4'>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'><p className='font-bold max-sm:font-semibold'>Street Address</p>
               <input type="text" placeholder='Street Address' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
 
-              <label className='w-[50%]'><p className='font-bold'>Direction (optional)</p>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'><p className='font-bold max-sm:font-semibold'>Direction (optional)</p>
               <input type="text" placeholder='Direction' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
             </div>
-            <div className='w-[90%] flex gap-5 justify-between items-center mb-10'>
-              <label className='w-[50%]'><p className='font-bold'>Local Government</p>
+            <div className='w-[90%] flex gap-5 justify-between items-center mb-10 max-sm:flex-col max-sm:gap-4 max-sm:mb-4'>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'><p className='font-bold max-sm:font-semibold'>Local Government</p>
               <input type="text" placeholder='Local Government' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
 
-              <label className='w-[50%]'><p className='font-bold'>State</p>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'><p className='font-bold max-sm:font-semibold'>State</p>
               <input type="text" placeholder='State' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
             </div>
-            <div className='w-[90%] flex  justify-between items-center mb-10'>
-              <label className='w-[50%]'><p className='font-bold'>City</p>
+            <div className='w-[90%] flex  justify-between items-center mb-10 max-sm:flex-col max-sm:gap-4 max-sm:mb-4'>
+              <label className='w-[50%] max-[320px]:w-[100%] max-[420px]:w-[100%]'><p className='font-bold max-sm:font-semibold'>City</p>
               <input type="text" placeholder='City' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
 
@@ -79,7 +79,7 @@ function Checkout() {
 
             <button type='submit'
             className="bg-[#BE0F24] text-white text-lg w-[440px] h-[50px]
-             flex mx-auto rounded-xl items-center justify-center">Continue</button>
+             flex mx-auto rounded-xl items-center justify-center max-sm:mx-0 max-sm:text-sm max-sm:w-[220px]">Continue</button>
           </form>
           </div>
         </div>
