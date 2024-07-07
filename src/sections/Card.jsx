@@ -2,6 +2,7 @@ import React from 'react'
 import './Styles/card.css';
 import { FaPlusCircle } from 'react-icons/fa';
 import { FaMinusCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Card(props) {
   return (
@@ -22,11 +23,13 @@ function Card(props) {
         </span>
     </div>
     <div className='flex justify-between text-sm mb-2'>
+    <Link to="/cart">
         <span 
         className='bg-[#BE0F24] w-[100px] rounded-xl p-2 text-white 
         text-s text-center'>
         {props.text}
         </span>
+        </Link>
     </div>
     
     </div>

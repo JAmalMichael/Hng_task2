@@ -8,7 +8,7 @@ import CartTable from '../sections/CartTable';
 function Cart() {
   return (
     <div className='mb-32'>
-        <div className='cart__header w-screen h-[14rem]'>
+        <div className='cart__header h-[14rem]'>
             <Nav />
         </div>
         <div>
