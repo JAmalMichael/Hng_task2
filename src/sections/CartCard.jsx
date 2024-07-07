@@ -27,9 +27,9 @@ function CartCard(props) {
                         
                     <div className='w-[151.3px] h-[40.8px] flex justify-between text-[18px] '>
                     <span className='flex text-[#BE0F24] items-center justify-center gap-1'>
-                    <FaPlusCircle />
+                    <FaPlusCircle className=' cursor-pointer '/>
                     <p className='font-semibold'>0</p>
-                    <FaMinusCircle />
+                    <FaMinusCircle className=' cursor-pointer '/>
                     </span>
                     </div>
                  </div>

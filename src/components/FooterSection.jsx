@@ -3,7 +3,7 @@ import './Styles/footersection.css';
 
 function FooterSection() {
   return (
-    <div className='footer__section w-[100%] relative h-[544px] mx-auto'>
+    <div className='footer__section w-[100%] relative h-[544px] mx-auto max-sm:hidden'>
         <div className='footer__section-text z-20 absolute text-white w-[392px] top-[154px] left-[100px]'>
             <h2 className='font-bold text-lg mb-2'>Having an issue with your purchase?</h2>
             <p className='mb-4'>Are you having issues with a previous or a recent order.
