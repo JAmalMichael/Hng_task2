@@ -5,7 +5,7 @@ import { FaPlusCircle } from 'react-icons/fa';
 import { FaMinusCircle } from 'react-icons/fa';
 
 function CartCard(props) {
-  const [quantity, setQuantity] = useState('0');
+  const [quantity, setQuantity] = useState(0);
 
   const handleClickP = () => {
     setQuantity( prevQuantity => prevQuantity + 1 );
