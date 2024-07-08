@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className='h-[365px] bg-[#060809] text-white relative max-sm:w-screen'>
         <div 
-        className=' flex justify-between items-center mx-auto p-2
+        className=' flex items-center mx-auto p-2 gap-20
         w-[80%] absolute left-[100px] top-[112px] mb-4 max-sm:mx-0 max-sm:w-[100%] max-sm:left-0'>
         <div className=' text-white w-[293px] h-[146px] '>
         <h2 className='font-bold text-[35px] mb-2 max-sm:text-[20px]'>Ifit</h2>
