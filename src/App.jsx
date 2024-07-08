@@ -8,11 +8,11 @@ function App() {
 
   return (
     <BrowserRouter >
-    <Routes>
-    <Route index element={<Home />} />
-    <Route path="/cart" element={<Cart />} />
-    <Route path="/checkout" element={<Checkout />} />
-    </Routes>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
     </BrowserRouter>
   )
 }
