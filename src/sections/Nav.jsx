@@ -4,6 +4,7 @@ import { FiSearch } from 'react-icons/fi';
 import { FiUser } from 'react-icons/fi';
 import { FiShoppingCart } from 'react-icons/fi';
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { Link } from 'react-router-dom';
 
 function Nav() {
 
@@ -32,7 +33,7 @@ function Nav() {
              <a href='/'><FiSearch /></a>
              </li>
              <li className='header__list hover:text-red-700'>
-             <a href='/'><FiShoppingCart /></a>
+             <Link to="/cart"><FiShoppingCart /></Link>
              </li>
              <li className='header__list'>
              <a href='/'><FiUser /></a>
