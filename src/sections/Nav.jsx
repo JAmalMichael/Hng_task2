@@ -31,7 +31,7 @@ function Nav() {
              <li className='header__list'>
              <a href='/'><FiSearch /></a>
              </li>
-             <li className='header__list'>
+             <li className='header__list hover:text-red-700'>
              <a href='/'><FiShoppingCart /></a>
              </li>
              <li className='header__list'>
