@@ -7,7 +7,7 @@ import Checkout from './components/Checkout'
 function App() {
 
   return (
-    <BrowserRouter >
+    <BrowserRouter basename='/' >
       <Routes>
         <Route index element={<Home />} />
         <Route path="/cart" element={<Cart />} />
