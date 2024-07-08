@@ -74,7 +74,6 @@ function Checkout() {
               <input type="text" placeholder='City' className='p-3 bg-[#F8F8FA] w-[100%] rounded-xl h-[44px]'/>
               </label>
 
-            
             </div>
             <div className='flex gap-4 justify-center'>
             <button type='submit'
