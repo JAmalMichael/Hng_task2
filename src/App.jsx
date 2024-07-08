@@ -3,10 +3,11 @@ import Home from "./components/Home";
 import Cart from "./components/Cart";
 import Checkout from './components/Checkout'
 
+
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter path={import.meta.env.VITE_PUBLIC_URL}>
     <Routes>
     <Route index element={<Home />} />
     <Route path="/cart" element={<Cart />} />
