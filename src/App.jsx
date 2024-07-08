@@ -12,7 +12,6 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   )
