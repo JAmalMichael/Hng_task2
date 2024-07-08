@@ -7,7 +7,7 @@ import Checkout from './components/Checkout'
 function App() {
 
   return (
-    <BrowserRouter path={import.meta.env.VITE_PUBLIC_URL + '/'}>
+    <BrowserRouter >
     <Routes>
     <Route index element={<Home />} />
     <Route path="/cart" element={<Cart />} />
