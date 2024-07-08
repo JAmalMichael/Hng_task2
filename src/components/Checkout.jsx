@@ -76,11 +76,15 @@ function Checkout() {
 
             
             </div>
-
+            <div className='flex gap-4 justify-center'>
             <button type='submit'
-            className="bg-[#BE0F24] text-white text-lg w-[440px] h-[50px]
-             flex mx-auto rounded-xl items-center justify-center max-sm:mx-0 max-sm:text-sm max-sm:w-[220px]">Continue</button>
-          </form>
+            className="bg-[#BE0F24] text-white text-lg w-[220px] h-[50px]
+             flex rounded-xl items-center justify-center max-sm:mx-0 max-sm:text-sm max-sm:w-[220px]">Continue</button>
+            <button type='submit'
+            className="border border-[#BE0F24] text-[#BE0F24] text-lg w-[220px] h-[50px]
+             flex rounded-xl items-center justify-center max-sm:mx-0 max-sm:text-sm max-sm:w-[220px]">Cancel</button>
+             </div>
+             </form>
           </div>
         </div>
       </div>
